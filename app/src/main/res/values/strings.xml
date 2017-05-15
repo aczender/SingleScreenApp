@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Business card</string>
+    <string name="address">Bp, 1234 Something street 7.</string>
+    <string name="facebook_page">www.facebook.com</string>
+    <string name="phone_number">+36 1 234 567</string>
+    <string name="introduction">Welcome to our new coffee shop!
+        Please enjoy your drinks and discover the whole World with our special coffee selection</string>
+    <string name="place_name">World of Coffee</string>
+    <string name="button_coffee_menu">menu</string>
+    <string name="button_coffee_history">history</string>
+    <string name="button_coffee_pictures">pictures</string>
+</resources>

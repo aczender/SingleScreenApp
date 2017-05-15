@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context="com.example.android.singlescreenapp.BusinessCard">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/world_of_coffee" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shadow_layout"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/LinearLStyle">
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:src="@drawable/facebook_vector_black" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="@string/facebook_page"
+                android:textColorLink="@color/colorStrings" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLStyle">
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:src="@drawable/phon_vector" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/phone_number" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLStyle">
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:src="@drawable/location_vector" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/address" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingTop="35dp"
+            android:text="@string/introduction"
+            android:textAlignment="center"
+            android:textColor="@color/colorStrings"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons_view"
+        android:layout_alignParentTop="false"
+        android:fontFamily="serif"
+        android:text="@string/place_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorStrings"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/buttons_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/coffee_history"
+            style="@style/ButtonStyle"
+            android:layout_margin="@dimen/button_layout_margin"
+            android:onClick="coffee_history"
+            android:text="@string/button_coffee_history" />
+
+        <Button
+            android:id="@+id/coffee_menu"
+            style="@style/ButtonStyle"
+            android:layout_margin="@dimen/button_layout_margin"
+            android:onClick="coffee_menu"
+            android:text="@string/button_coffee_menu" />
+
+        <Button
+            android:id="@+id/coffee_pictures"
+            style="@style/ButtonStyle"
+            android:layout_margin="@dimen/button_layout_margin"
+            android:onClick="coffee_pictures"
+            android:text="@string/button_coffee_pictures" />
+    </LinearLayout>
+
+
+</RelativeLayout>
