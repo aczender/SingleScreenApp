@@ -11,11 +11,14 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scaleType="fitStart"
         android:background="@drawable/world_of_coffee" />
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="330dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
         android:layout_centerInParent="true"
         android:background="@drawable/shadow_layout"
         android:orientation="vertical">
@@ -63,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:paddingTop="35dp"
+            android:padding="30dp"
             android:text="@string/introduction"
             android:textAlignment="center"
             android:textColor="@color/colorStrings"
